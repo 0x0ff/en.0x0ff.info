@@ -230,7 +230,7 @@ Stealth is also an essential factor, and this is again where technical quality m
 {: .text-justify}
 
 
-**warning:** good examples of stealth and obfuscation can be found in the study of ransomware-type attacks which are often based on sending an office document (_**.docx**, **.xlsx**, **.pdf**, etc._) by email, containing macros. This code is generally obfuscated (_see_ [_Impenetrable Code_](https://fr.wikipedia.org/wiki/Code_imp%C3%A9n%C3%A9trable)) to trick **anti-virus** and other security solutions, and usually only includes two things: a custom encryption / decryption function and a download function for an encrypted malicious **payload** (_custom_). When the document is opened and the macro is used, the document gets the **payload** , decrypts it on reception and executes the attack program thus recovered.
+**warning:** good examples of stealth and obfuscation can be found in the study of ransomware-type attacks which are often based on sending an office document (_**.docx**, **.xlsx**, **.pdf**, etc._) by email, containing macros. This code is generally obfuscated (_see_ [_Impenetrable Code_](https://fr.wikipedia.org/wiki/Code_imp%C3%A9n%C3%A9trable)) to trick **anti-virus** and other security solutions, and usually only includes two things: a custom encryption/decryption function and a download function for an encrypted malicious **payload** (_custom_). When the document is opened and the macro is used, the document gets the **payload** , decrypts it on reception and executes the attack program thus recovered.
 {: .notice--warning}
 {: .text-justify}
 

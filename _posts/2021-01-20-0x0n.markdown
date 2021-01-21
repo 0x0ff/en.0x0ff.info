@@ -10,7 +10,7 @@ header:
 
 
 
-It's feel like an eternity to me since I begin to put words on Le Internet... 22th of april, 2013. This was it: [0x0n](https://www.0x0ff.info/2013/0x0n/). But, well.
+It's feel like an eternity to me since I began to put words on Le Internet... 22th of april, 2013. This was it: [0x0n](https://www.0x0ff.info/2013/0x0n/). But, well.
 {: .text-justify}
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/memes/ashwga.jpg){: style="display: block; margin-left: auto; margin-right: auto;"}

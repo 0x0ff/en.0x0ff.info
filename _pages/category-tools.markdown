@@ -1,7 +1,7 @@
 ---
 title: "Tools"
 layout: category
-permalink: /catz/tools
+permalink: /catz/tools/
 taxonomy: tools
 author_profile: true
 ---

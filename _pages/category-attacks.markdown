@@ -1,7 +1,7 @@
 ---
 title: "Attacks"
 layout: category
-permalink: /catz/attacks
+permalink: /catz/attacks/
 taxonomy: attacks
 author_profile: true
 ---
