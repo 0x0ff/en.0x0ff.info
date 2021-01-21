@@ -31,3 +31,5 @@ gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
 
 # Custom
 #gem "minimal-mistakes-jekyll"
+gem "jekyll-remote-theme"
+
