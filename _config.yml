@@ -83,7 +83,7 @@ Timezone: Europe/Paris
 comments:
   provider: "disqus"
   disqus:
-    shortname: "0x0ff"
+    shortname: "0x0ffinfo"
 
 social:
   type: "Person" # Person or Organization (defaults to Person)
