@@ -13,7 +13,7 @@ Password theft, bot-net creation, life on the internet has become a wild place. 
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/comics_0x0ff/0x0ffinfo_comics_reporter.png){: style="float: right; width: 200px; margin: 1em"}
 
-Nowadays there are so many different ways to take control of machines remotely. Via **SQL injections** , **Remote File Inclusion ([RFI](https://fr.wikipedia.org/wiki/Remote_File_Inclusion))** or quite simply because certain servers, applications, equipment, devices give up free access to their system, protected only by a trivial password, or worse ";by default"; (_therefore found in product documentation_). These configuration vulnerabilities and weaknesses are generally looked for automatically by bot armies via "**\<Insert Search Engine Here\> dorking**" or scripts performing **scan** + **fingerprinting** (_identification of OS / applications and their version_).
+Nowadays there are so many different ways to take control of machines remotely. Via **SQL injections** , **Remote File Inclusion ([RFI](https://fr.wikipedia.org/wiki/Remote_File_Inclusion))** or quite simply because certain servers, applications, equipment, devices give up free access to their system, protected only by a trivial password, or worse "by default" (_therefore found in product documentation_). These configuration vulnerabilities and weaknesses are generally looked for automatically by bot armies via "**\<Insert Search Engine Here\> dorking**" or scripts performing **scan** + **fingerprinting** (_identification of OS / applications and their version_).
 {: .text-justify}
 
 This article presents a glimpse of **client side** attacks (_**Client Side**_), which exploit our **OS** and application installed weaknesses. The peculiarity of these attacks are designed to make us pull the trigger ourselves, because yes, the main lever of this attack type is the users inadvertence and gullibility.
@@ -130,7 +130,7 @@ Rather than a long speech, let's take a look at a **concrete** case that will gi
 {: .text-justify}
 
 1. **Identification of the target:** maximizing the quality of the attack and the quantity of targets being the primary goal, the preliminary phase will consist in studying and learning the internet uses of the more or less large population who will be the target of the attack.
-2. **The creation of a ";water point";:** the water point is the booby trapped page (_generally via the exploitation of an **XSS** vuln_) which will allow the hacker to attack his victims thanks to the malicious code injection vulnerability. This page usually contains the content sought by the targeted victims in order to avoid any suspicion.
+2. **The creation of a "water point":** the water point is the booby trapped page (_generally via the exploitation of an **XSS** vuln_) which will allow the hacker to attack his victims thanks to the malicious code injection vulnerability. This page usually contains the content sought by the targeted victims in order to avoid any suspicion.
 3. **Fishing:** this step consists of creating and baiting potential victims via various vectors (_emails, fake advertising banners, link on a forum, post on a social network, etc._). For example, if the conspirators are the attack targets, then it could be an email with the hooking title such as "**FINALLY! EVERYTHING IS REVEALED! THE GOVERNMENT LIED US ABOUT…**".
 
 The success of such an attack is determined by the following equation:
