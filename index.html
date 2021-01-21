@@ -1,0 +1,113 @@
+---
+title: "Home"
+layout: splash
+#entries_layout: grid
+#header:
+#  overlay_color: "#000"
+#  overlay_filter: "0.5"
+#  overlay_image: /assets/images/unsplash-image-1.jpg
+#  actions:
+#    - label: "Download"
+#      url: "https://github.com/mmistakes/minimal-mistakes/"
+#  caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+#excerpt: "Bacon ipsum dolor sit amet salami ham hock ham, hamburger corned beef short ribs kielbasa biltong t-bone drumstick tri-tip tail sirloin pork chop."
+#intro: 
+#  - excerpt: 'Nullam suscipit et nam, tellus velit pellentesque at malesuada, enim eaque. Quis nulla, netus tempor in diam gravida tincidunt, *proin faucibus* voluptate felis id sollicitudin. Centered with `type="center"`'
+feature_row:
+  - image_path: assets/images/default_bg_catz.png
+    image_caption: "Attacks"
+    alt: "Attacks"
+    title: "Attacks"
+    excerpt: "Everything about attacks."
+    url: "/catz/attacks/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/default_bg_catz.png
+    image_caption: "TOOLS"
+    alt: "Tools"
+    title: "Tools"
+    excerpt: "Everything about tools."
+    url: "/catz/tools/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+  - image_path: /assets/images/default_bg_catz.png
+    image_caption: "CTF"
+    alt: "CTF"
+    title: "CTF"
+    excerpt: "Everything about CTF and challs."
+    url: "/catz/ctf/"
+    btn_label: "Read More"
+    btn_class: "btn--primary"
+#feature_row2:
+#  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#    alt: "placeholder image 2"
+#    title: "Placeholder Image Left Aligned"
+#    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Left aligned with `type="left"`'
+#    url: "#test-link"
+#    btn_label: "Read More"
+#    btn_class: "btn--primary"
+#feature_row3:
+#  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#    alt: "placeholder image 2"
+#    title: "Placeholder Image Right Aligned"
+#    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Right aligned with `type="right"`'
+#    url: "#test-link"
+#    btn_label: "Read More"
+#    btn_class: "btn--primary"
+#feature_row4:
+#  - image_path: /assets/images/unsplash-gallery-image-2-th.jpg
+#    alt: "placeholder image 2"
+#    title: "Placeholder Image Center Aligned"
+#    excerpt: 'This is some sample content that goes here with **Markdown** formatting. Centered with `type="center"`'
+#    url: "#test-link"
+#    btn_label: "Read More"
+#    btn_class: "btn--primary"
+---
+&nbsp;
+{% include feature_row %}
+    <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
+    {% if paginator %}
+      {% assign posts = paginator.posts %}
+    {% else %}
+      {% assign posts = site.posts %}
+    {% endif %}
+    {% assign entries_layout = page.entries_layout | default: 'list' %}
+    <div class="entries-{{ entries_layout }}">
+	{% for post in posts %}
+          {% if post.header.teaser %}
+	    {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+	  {% else %}
+	    {% assign teaser = site.teaser %}
+	  {% endif %}
+
+	  {% if post.id %}
+	    {% assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" %}
+	  {% else %}
+	    {% assign title = post.title %}
+	  {% endif %}
+
+	  <div class="{{ include.type | default: 'list' }}__item" style="min-height: 250px">
+	    <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+	      <div class="archive__item-teaser grid__item" style="margin-right: 1em">
+	        <img src="{{ teaser | relative_url }}" alt="" style="max-height: 250px">
+	      </div>
+	      <div>
+	        <h2 class="archive__item-title no_toc" itemprop="headline">
+	        {% if post.link %}
+	          <a href="{{ post.link }}">{{ title }}</a> <a href="{{ post.url | relative_url }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
+	        {% else %}
+	          <a href="{{ post.url | relative_url }}" rel="permalink">{{ title }}</a>
+	        {% endif %}
+	        </h2>
+	        {% include page__meta.html type=include.type %}
+	        {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
+	      </div>
+	    </article>
+	  </div>
+	{% endfor %}
+      </div>
+
+<h3 class="archive__subtitle">Dafuq is this ?</h3>
+
+<p>This blog is hosted by <b>GitHub Pages</b>. It's an english version of the french blog <a href="https://0x0ff.info" target="_blank">0x0ff.info</a>.</p>
+

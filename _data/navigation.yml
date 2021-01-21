@@ -1,0 +1,13 @@
+main:
+  - title: "0x0ff.info (FR)"
+    url: https://0x0ff.info
+
+myside:
+  - title: Categories
+    children:
+      - title: "Attacks"
+        url: /catz/attacks
+      - title: "Tools"
+        url: /catz/tools/
+      - title: "CTF"
+        url: /catz/ctf/
