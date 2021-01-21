@@ -1,6 +1,6 @@
 ---
 title: "Attacks"
-layout: category
+layout: single
 permalink: /catz/attacks
 taxonomy: attacks
 author_profile: true

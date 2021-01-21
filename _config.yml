@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: "0X0FF.INFO (EN)"
+title: "0X0FF.INFO (EN) - BETA!"
 email: "0x0ff.info@gmail.com"
 description: >- # this means to ignore newlines until "baseurl:"
   This is the english version of 0x0ff.info french blog.
@@ -72,7 +72,7 @@ head_scripts:
   - https://code.jquery.com/jquery-3.2.1.min.js
 teaser: "/assets/images/default_teaser_0x0ff.png"
 logo: "/assets/images/logo_0x0ff.png"
-masthead_title: "0X0FF.INFO"
+masthead_title: "0X0FF.INFO - BETA!"
 search: true
 #breadcrumbs: false
 #words_per_minute: 250
