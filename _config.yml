@@ -60,6 +60,7 @@ plugins:
 #
 
 # Custom
+environment: production
 remote_theme: "mmistakes/minimal-mistakes"
 include: ["_pages"]
 minimal_mistakes_skin: "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
