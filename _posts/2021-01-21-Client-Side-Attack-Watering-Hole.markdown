@@ -49,7 +49,7 @@ In this article we will present the construction of a so-called "Watering Hole A
 # **WHAT IS XSS?**
 
 **Note:** If you are already aware of this subject, you can skip this chapter completely.
-{: notice--warning}
+{: .notice--warning}
 {: .text-justify}
 
 Hard to believe that it is the first time that we have really talked about **XSS** on this blog because these attack kinds are offensive security's 101. Hence why, when beginning to study the subject or when we usually start the challenges and **CTF** on sites like [www.newbiecontest.org](http://www.newbiecontest.org/) , [root-me.org](http://root-me.org/) , [www.hackthebox.eu](http://www.hackthebox.eu/) , we almost always start by digging the **SQL injections** and **XSS flaws**.
