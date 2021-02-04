@@ -159,6 +159,7 @@ void funcMyLife(const char *arg)
  strcpy(buffer, arg);
  printf("\nMessage : %s\n\n", buffer);
  printf("[5] funcMyLife() end at the next instruction (ret).\n");
+}
 ```
 
 ## COMPILE OUR PROGRAM WHILE LIMITING THE PROTECTIONS
