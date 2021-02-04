@@ -3,7 +3,7 @@ layout: single
 classes: wide
 title: " Buffer Overflow & GDB - Part 1"
 date:  2021-02-04 21:30:00
-categories: attacks
+categories: tools
 header:
  teaser: "/assets/images/gdb_part1.png"
 ---
