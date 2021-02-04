@@ -280,6 +280,8 @@ The Return Address is a pointer which is positioned at the start of the stack, w
 And There you go ! This first part ends here and I feel like you might be bubbling "*Pfff! We haven't even started gdb, what a scam!*". Yes, true, but admit that it was not so uninteresting after all… What is certain is that it was important to see or review the basics before onboarding on the Debuggers, **[Buffer Overflow][refbo]** adventure, all of those are relatively sophisticated subjects and it is essential to know exactly what you are doing and why you are doing it. Consider that the foundation has just been laid. We will tackle the structural work in **part 2**, and I promise you from now on, we will use **gdb**.
 {: .text-justify}
 
+_Translated from [0x0ff.info](https://www.0x0ff.info/2021/attaque-cote-client-xss-et-phishing/) by [@Razcall_](https://twitter.com/Razcall_)._
+
 [refbo]: https://en.wikipedia.org/wiki/Buffer_overflow
 [gdb]: https://en.wikipedia.org/wiki/GNU_Debugger
 [low level]: https://en.wikipedia.org/wiki/Low-level_programming_language
