@@ -259,6 +259,7 @@ gdb-peda$ step
 gdb-peda$ next
 [...]
 ```
+<br/>
 
 ## QUIT GDB
 
@@ -323,6 +324,7 @@ Make yourself aware that we achieved this by using almost no commands! **shellco
 {: .text-justify}
 
 # 1ST EXPLOIT
+
 **getchar()** C function has the specificty of not taking any arguments. When **getchar()** function is executed, the program awaits for a character to be entered by the user (_on **stdin**_). If we overwrite the Return Address with this function address, the program should therefore execute the **getchar()** function … shouldn't it?
 {: .text-justify}
 
