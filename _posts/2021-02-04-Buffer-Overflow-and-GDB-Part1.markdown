@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-title: " Buffer Overflow & GDB - Part 1"
-date:  2021-02-04 21:30:00
+title: "Buffer Overflow & GDB - Part 1"
+date: 2021-02-04 21:30:00
 categories: tools
 header:
  teaser: "/assets/images/gdb_part1.png"
@@ -73,7 +73,7 @@ The memory space available in **RAM** is quite large. In order to quickly find t
 If you refer to the infographic that I produced some time ago and which you can find below, you will notice that when a program is initialized, a certain number of the program-specific memory spaces are defined: **<span style="color:green">ext</span>**, **<span style="color:pink">GVar</span>**, **<span style="color:brown">BSS</span>**, **<span style="color:brown">Heap</span>**, **<span style="color:darkblue">Stack</span>**... For the moment we are going to focus exclusively on the **Stack** which is a memory space where **buffer overflows** are common.
 {: .text-justify}
 
-[![alt](/assets/images/posts_img/buffer-overflow-memory-segmentation-cheat-sheet.png){: style="float: center;"}](/assets/images/posts_img/buffer-overflow-memory-segmentation-cheat-sheet.png)
+[![alt](/assets/images/posts_img/buffer-overflow-memory-segmentation-cheat-sheet.png)](/assets/images/posts_img/buffer-overflow-memory-segmentation-cheat-sheet.png)
 
 # STACK
 
@@ -94,7 +94,7 @@ The variable **<span style="color:blue">a</span>** will have a bigger address th
 And yes, another cheerful memory feature in Linux is the **Little Endian** representation. As you probably know, the space taken by data in memory can vary (_if you ignored it I advise you to take a look at this paper: **[Dirty types of data!][refdirtydata]** not yet translated_). The **Little Endian** or **Big Endian** format influences how the data is ordered. Imagine a pointer pointing to a string. This pointer, like all pointers on a **32 bit** system is **4 bytes** long (_which is the size of an address, remember?_). Let's imagine that this pointer is located at the address **<span style="color:blue">0xbfff</span>** **<span style="color:green">aa00</span>** and contains the address of the first character of our string **<span style="color:blue">0xbfff</span><span style="color:orange">bbcc</span>**, this is how it would be represented based on [endianness].
 {: .text-justify}
 
-![alt](/assets/images/posts_img/little-big-endian.png){: style="float: center; width: 800px; margin: 1em"}
+![alt](/assets/images/posts_img/little-big-endian.png){: style="display: block; margin-left: auto; margin-right: auto; width: 800px"}
 
 ```
     Big Endian    |    Little Endian
