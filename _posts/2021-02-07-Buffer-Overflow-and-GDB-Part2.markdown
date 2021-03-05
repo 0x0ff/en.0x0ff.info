@@ -5,7 +5,7 @@ title: "Buffer Overflow & GDB - Part 2"
 date: 2021-02-07 14:30:00
 categories: tools
 header:
- teaser: "/assets/images/gdb-enhanced.png"
+ teaser: "/assets/images/gdb-matrix.png"
 ---
 
 
