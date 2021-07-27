@@ -33,7 +33,7 @@ After starting this little thing, I've found out that purposly hackable games is
 This early version is more of a demo. But ! It's definitly playable!
 {: .text-justify}
 
-To download the first version of the game, you need to create an account on [root-me.org][root-me_org] and start the virtual environment named "**getting-root-over-it-v0**". And then... You kinda have to break into it before playing it! Sorry about that.
+To download the first version of the game, you need to create an account on [root-me.org][root-me_org] and start the virtual environment named "**getting-root-over-it-v1**". And then... You kinda have to break into it before playing it! Sorry about that.
 {: .text-justify}
 
 ### v.0.0.3
