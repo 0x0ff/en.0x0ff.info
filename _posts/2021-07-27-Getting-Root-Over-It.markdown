@@ -11,7 +11,7 @@ header:
 I started working on a little side project few months ago. It began with me fumbling around **Unity** to learn it. At some point I told myself "_Hey, it would be fun to make some **CTF challenges** around it!_". So here we are now!
 {: .text-justify}
 
-After starting this little thing, I've found out that purposly hackable games is already something. Notably there is [Pwn Adventure][pwn_adventure] a quite constential game. The **2020 GoogleCTF** was also built around a game (_[there a cool interview of **BitK** by **Nahamsec** about this event][yt_bitk_nahamsec]_). I'm no **Google** nor somewhate good in dev or in InfoSec... But hey, It's something, right? ¯\\_(ツ)_/¯
+After starting this little thing, I've found out that purposly hackable games is already something. Notably there is **[Pwn Adventure][pwn_adventure]** a quite constential game. The **2020 GoogleCTF** was also built around a game (_[there a cool interview of **BitK** by **Nahamsec** about this event][yt_bitk_nahamsec]_). I'm no **Google** nor somewhate good in dev or in InfoSec... But hey, It's something, right? ¯\\_(ツ)_/¯
 {: .text-justify}
 
 # Game Overview
