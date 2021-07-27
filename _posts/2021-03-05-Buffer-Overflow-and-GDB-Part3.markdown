@@ -1,8 +1,8 @@
 ---
 layout: single
 classes: wide
-title: " buffer overflow & gdb - part 3"
-date: 2021-03-04 21:00:00
+title: "buffer overflow & gdb - part 3"
+date: 2021-03-05 12:30:00
 categories: tools
 header:
  teaser: "/assets/images/gdb-enhanced.png"
