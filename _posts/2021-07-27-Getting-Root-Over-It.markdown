@@ -3,7 +3,7 @@ layout: single
 classes: wide
 title: "Getting Root Over It!"
 date: 2021-07-27 12:30:00
-categories: tools
+categories: ctf
 header:
  teaser: "/assets/images/groi-miniature.png"
 ---
