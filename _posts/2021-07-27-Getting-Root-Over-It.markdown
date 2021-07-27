@@ -19,7 +19,7 @@ After starting this little thing, I've found out that purposly hackable games is
 "**Getting Root Over It!**" is a "**Rage Game**" much like "**Getting Over it**" or "**Boxman Struggle**" (_but shittier_) currently under development but already playable! The gameplay is focused around time score, so it's clearly designed to speedrun it!
 {: .text-justify}
 
-[There a short (_low quality_) gameplay video][groi_gameplay_preview], and bellow some pictures of this early early version!
+[There a short (_low quality_) gameplay video][groi_gameplay_preview], and [here a full run video (_version v0.0.2_)][groi_first_run] and bellow some pictures of this early early version!
 
 [![alt](/assets/images/posts_img/groi-dev-image01.png)](/assets/images/posts_img/groi-dev-image01.png)
 
@@ -28,7 +28,7 @@ After starting this little thing, I've found out that purposly hackable games is
 
 # Download the game
 
-### v.0.0.2
+### v0.0.2
 
 This early version is more of a demo. But ! It's definitly playable!
 {: .text-justify}
@@ -36,7 +36,7 @@ This early version is more of a demo. But ! It's definitly playable!
 To download the first version of the game, you need to create an account on [root-me.org][root-me_org] and start the virtual environment named "**getting-root-over-it-v1**". And then... You kinda have to break into it before playing it! Sorry about that.
 {: .text-justify}
 
-### v.0.0.3
+### v0.0.3
 
 Soon...
 {: .text-justify}
@@ -55,4 +55,5 @@ Folow the project on [Trello - Getting Root Over It! dashboard][groi_trello].
 [root-me_org]:https://www.root-me.org
 [yt_bitk_nahamsec]:https://www.youtube.com/watch?v=p3_rTRwaiOY
 [groi_gameplay_preview]:/assets/images/posts_img/groi-preview.mp4
+[groi_first_run]:/assets/images/posts_img/Getting-root-Over-It-v0.0.2-first_run.mp4
 [pwn_adventure]:https://www.pwnadventure.com/
